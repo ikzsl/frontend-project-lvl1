@@ -24,3 +24,7 @@ jobs:
       
       - name: linter
         run: make lint
+        
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.HEXLET_ID }}
