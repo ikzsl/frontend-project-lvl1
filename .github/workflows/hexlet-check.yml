@@ -21,10 +21,3 @@ jobs:
 
       - name: Hexlet project check
         uses: hexlet/project-action@release
-      
-      - name: linter
-        run: make lint
-        
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.HEXLET_ID }}
